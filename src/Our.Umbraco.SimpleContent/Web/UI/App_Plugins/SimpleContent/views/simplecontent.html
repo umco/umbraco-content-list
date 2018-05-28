@@ -1,0 +1,25 @@
+﻿<div class="simple-content" ng-controller="Our.Umbraco.SimpleContent.Controllers.PropertyEditorController as vm">
+
+    <div ui-sortable="vm.sortableOptions" ng-model="model.value">
+        <umb-node-preview ng-repeat="item in model.value"
+                          icon="item.icon"
+                          name="item.name"
+                          published="vm.published"
+                          description=""
+                          sortable="vm.sortable"
+                          allow-remove="vm.allowRemove"
+                          allow-edit="vm.allowEdit"
+                          on-remove="vm.remove($index, model.value)"
+                          on-edit="vm.edit($event, $index, item)">
+        </umb-node-preview>
+    </div>
+
+    <a ng-if="vm.allowAdd" class="umb-node-preview-add" href="" ng-click="vm.add($event)" prevent-default>
+        <localize key="general_add">Add</localize>
+    </a>
+
+    <inner-content-overlay ng-if="vm.overlayConfig.show"
+                           config="vm.overlayConfig">
+    </inner-content-overlay>
+
+</div>
