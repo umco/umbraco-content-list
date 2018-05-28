@@ -1,6 +1,7 @@
 # Content List
 
 [![Build status](https://img.shields.io/appveyor/ci/UMCO/umbraco-content-list.svg)](https://ci.appveyor.com/project/UMCO/umbraco-content-list)
+[![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.ContentList.svg)](https://www.nuget.org/packages/Our.Umbraco.ContentList)
 
 An Umbraco property editor for creating a list of content blocks.
 
@@ -10,7 +11,15 @@ An Umbraco property editor for creating a list of content blocks.
 
 > *Note:* Content List has been developed against **Umbraco v7.7.0** and will support that version and above.
 
-Content List can be built manually from the source-code:
+Content List can be installed from either NuGet package repositories, or build manually from the source-code:
+
+#### NuGet package repository
+
+To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.ContentList), you can run the following command from within Visual Studio:
+
+	PM> Install-Package Our.Umbraco.ContentList
+
+We also have a [MyGet package repository](https://www.myget.org/gallery/umbraco-packages) - for bleeding-edge / development releases.
 
 #### Manual build
 
