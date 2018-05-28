@@ -15,7 +15,7 @@ before_build:
   - nuget restore src
 
 build_script:
-  - build-appveyor.cmd
+  - build\build-appveyor.cmd
 
 artifacts:
   - path: artifacts\*.nupkg
