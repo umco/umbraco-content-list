@@ -55,6 +55,7 @@ Have a question?
 ## Dev Team
 
 * [Lee Kelleher](https://github.com/leekelleher)
+* [Matt Brailsford](https://github.com/mattbrailsford)
 
 ## License
 
