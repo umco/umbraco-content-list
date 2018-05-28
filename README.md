@@ -2,6 +2,7 @@
 
 [![Build status](https://img.shields.io/appveyor/ci/UMCO/umbraco-content-list.svg)](https://ci.appveyor.com/project/UMCO/umbraco-content-list)
 [![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.ContentList.svg)](https://www.nuget.org/packages/Our.Umbraco.ContentList)
+[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.org/projects/backoffice-extensions/content-list)
 
 An Umbraco property editor for creating a list of content blocks.
 
@@ -20,6 +21,12 @@ To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.ContentList),
 	PM> Install-Package Our.Umbraco.ContentList
 
 We also have a [MyGet package repository](https://www.myget.org/gallery/umbraco-packages) - for bleeding-edge / development releases.
+
+#### Our Umbraco package repository
+
+To install from Our Umbraco, please download the package from:
+
+> <https://our.umbraco.org/projects/backoffice-extensions/content-list>
 
 #### Manual build
 
@@ -59,6 +66,7 @@ Anyone and everyone is welcome to contribute. Please take a moment to review the
 
 Have a question?
 
+* [Simple Content Forum](https://our.umbraco.org/projects/backoffice-extensions/content-list/content-list-feedback) on Our Umbraco
 * [Raise an issue](https://github.com/umco/umbraco-content-list/issues) on GitHub
 
 ## Dev Team
