@@ -21,10 +21,10 @@
 		<MinUmbracoVersion>7.7.0</MinUmbracoVersion>
 		<Readme>Simple Content is an Umbraco property-editor for creating simple content blocks.</Readme>
 		<AuthorName>Lee Kelleher, Matt Brailsford</AuthorName>
-		<AuthorUrl>https://github.com/umco/umbraco-simple-content/graphs/contributors</AuthorUrl>
+		<AuthorUrl>https://github.com/leekelleher/umbraco-simple-content/graphs/contributors</AuthorUrl>
 		<PackageLicenseName>MIT license</PackageLicenseName>
 		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-		<ProjectUrl>https://github.com/umco/umbraco-simple-content</ProjectUrl>
+		<ProjectUrl>https://github.com/leekelleher/umbraco-simple-content</ProjectUrl>
 	</PropertyGroup>
 
 	<!-- NUGET ONLY PROPERTIES -->
@@ -33,7 +33,7 @@
 		<NuGetPackageName>Simple Content for Umbraco</NuGetPackageName>
 		<Copyright>Copyright &#169; 2018 UMCO, Our Umbraco and other contributors</Copyright>
 		<Owners>Lee Kelleher, Matt Brailsford</Owners>
-		<IconUrl>https://raw.githubusercontent.com/umco/umbraco-simple-content/master/docs/img/logo.png</IconUrl>
+		<IconUrl>https://raw.githubusercontent.com/leekelleher/umbraco-simple-content/master/docs/img/logo.png</IconUrl>
 		<Tags>umbraco umco</Tags>
 		<Language>en-GB</Language>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>

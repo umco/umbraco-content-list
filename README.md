@@ -19,7 +19,7 @@ If you prefer, you can compile Simple Content yourself, you'll need:
 
 To clone it locally click the "Clone in Windows" button above or run the following git commands.
 
-	git clone https://github.com/umco/umbraco-simple-content.git umbraco-simple-content
+	git clone https://github.com/leekelleher/umbraco-simple-content.git umbraco-simple-content
 	cd umbraco-simple-content
 	.\build.cmd
 
@@ -49,7 +49,7 @@ Anyone and everyone is welcome to contribute. Please take a moment to review the
 
 Have a question?
 
-* [Raise an issue](https://github.com/umco/umbraco-simple-content/issues) on GitHub
+* [Raise an issue](https://github.com/leekelleher/umbraco-simple-content/issues) on GitHub
 
 ## Dev Team
 
@@ -57,6 +57,6 @@ Have a question?
 
 ## License
 
-Copyright &copy; 2018 UMCO, Our Umbraco and [other contributors](https://github.com/umco/umbraco-simple-content/graphs/contributors)
+Copyright &copy; 2018 UMCO, Our Umbraco and [other contributors](https://github.com/leekelleher/umbraco-simple-content/graphs/contributors)
 
 Licensed under the [MIT License](LICENSE.md)
