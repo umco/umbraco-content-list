@@ -1,5 +1,6 @@
 # Simple Content
 
+[![Build status](https://img.shields.io/appveyor/ci/UMCO/umbraco-simple-content.svg)](https://ci.appveyor.com/project/UMCO/umbraco-simple-content)
 
 An Umbraco property editor for creating simple content blocks.
 
