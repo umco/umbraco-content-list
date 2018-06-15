@@ -1,11 +1,11 @@
 param($installPath, $toolsPath, $package, $project)
 
 $appPluginsFolder = $project.ProjectItems | Where-Object { $_.Name -eq "App_Plugins" }
-$contentFolder = $appPluginsFolder.ProjectItems | Where-Object { $_.Name -eq "SimpleContent" }
+$contentFolder = $appPluginsFolder.ProjectItems | Where-Object { $_.Name -eq "ContentList" }
 
 if (!$contentFolder)
 {
-	$newPackageFiles = "$installPath\Content\App_Plugins\SimpleContent"
+	$newPackageFiles = "$installPath\Content\App_Plugins\ContentList"
 
 	$projFile = Get-Item ($project.FullName)
 	$projDirectory = $projFile.DirectoryName

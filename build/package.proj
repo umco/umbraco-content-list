@@ -16,24 +16,24 @@
 
 	<!-- SHARED PROPERTIES -->
 	<PropertyGroup>
-		<ProjectName>Our.Umbraco.SimpleContent</ProjectName>
-		<PackageName>Simple Content</PackageName>
+		<ProjectName>Our.Umbraco.ContentList</ProjectName>
+		<PackageName>Content List</PackageName>
 		<MinUmbracoVersion>7.7.0</MinUmbracoVersion>
-		<Readme>Simple Content is an Umbraco property-editor for creating simple content blocks.</Readme>
+		<Readme>Content List is an Umbraco property-editor for creating a list of content blocks.</Readme>
 		<AuthorName>Lee Kelleher, Matt Brailsford</AuthorName>
-		<AuthorUrl>https://github.com/leekelleher/umbraco-simple-content/graphs/contributors</AuthorUrl>
+		<AuthorUrl>https://github.com/umco/umbraco-content-list/graphs/contributors</AuthorUrl>
 		<PackageLicenseName>MIT license</PackageLicenseName>
 		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-		<ProjectUrl>https://github.com/leekelleher/umbraco-simple-content</ProjectUrl>
+		<ProjectUrl>https://github.com/umco/umbraco-content-list</ProjectUrl>
 	</PropertyGroup>
 
 	<!-- NUGET ONLY PROPERTIES -->
 	<PropertyGroup>
-		<PackageId>Our.Umbraco.SimpleContent</PackageId>
-		<NuGetPackageName>Simple Content for Umbraco</NuGetPackageName>
+		<PackageId>Our.Umbraco.ContentList</PackageId>
+		<NuGetPackageName>Content List for Umbraco</NuGetPackageName>
 		<Copyright>Copyright &#169; 2018 UMCO, Our Umbraco and other contributors</Copyright>
 		<Owners>Lee Kelleher, Matt Brailsford</Owners>
-		<IconUrl>https://raw.githubusercontent.com/leekelleher/umbraco-simple-content/master/docs/img/logo.png</IconUrl>
+		<IconUrl>https://raw.githubusercontent.com/umco/umbraco-content-list/master/docs/img/logo.png</IconUrl>
 		<Tags>umbraco umco</Tags>
 		<Language>en-GB</Language>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>

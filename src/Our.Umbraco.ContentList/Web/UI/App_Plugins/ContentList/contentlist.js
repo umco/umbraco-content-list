@@ -1,4 +1,4 @@
-﻿angular.module("umbraco").controller("Our.Umbraco.SimpleContent.Controllers.PropertyEditorController", [
+﻿angular.module("umbraco").controller("Our.Umbraco.ContentList.Controllers.PropertyEditorController", [
 
     "$scope",
     "innerContentService",

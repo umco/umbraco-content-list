@@ -1,34 +1,34 @@
-# Simple Content
+# Content List
 
-[![Build status](https://img.shields.io/appveyor/ci/UMCO/umbraco-simple-content.svg)](https://ci.appveyor.com/project/UMCO/umbraco-simple-content)
+[![Build status](https://img.shields.io/appveyor/ci/UMCO/umbraco-content-list.svg)](https://ci.appveyor.com/project/UMCO/umbraco-content-list)
 
-An Umbraco property editor for creating simple content blocks.
+An Umbraco property editor for creating a list of content blocks.
 
 ## Getting Started
 
 ### Installation
 
-> *Note:* Simple Content has been developed against **Umbraco v7.7.0** and will support that version and above.
+> *Note:* Content List has been developed against **Umbraco v7.7.0** and will support that version and above.
 
-Simple Content can be built manually from the source-code:
+Content List can be built manually from the source-code:
 
 #### Manual build
 
-If you prefer, you can compile Simple Content yourself, you'll need:
+If you prefer, you can compile Content List yourself, you'll need:
 
 * Visual Studio 2017 (or above)
 
 To clone it locally click the "Clone in Windows" button above or run the following git commands.
 
-	git clone https://github.com/leekelleher/umbraco-simple-content.git umbraco-simple-content
-	cd umbraco-simple-content
+	git clone https://github.com/umco/umbraco-content-list.git umbraco-content-list
+	cd umbraco-content-list
 	.\build.cmd
 
 ---
 
 ## Known Issues
 
-Please be aware that not all property-editors will work within Simple Content. The following Umbraco core property-editors are known to have compatibility issues:
+Please be aware that not all property-editors will work within Content List. The following Umbraco core property-editors are known to have compatibility issues:
 
 * Image Cropper
 * Tags
@@ -50,7 +50,7 @@ Anyone and everyone is welcome to contribute. Please take a moment to review the
 
 Have a question?
 
-* [Raise an issue](https://github.com/leekelleher/umbraco-simple-content/issues) on GitHub
+* [Raise an issue](https://github.com/umco/umbraco-content-list/issues) on GitHub
 
 ## Dev Team
 
@@ -58,6 +58,6 @@ Have a question?
 
 ## License
 
-Copyright &copy; 2018 UMCO, Our Umbraco and [other contributors](https://github.com/leekelleher/umbraco-simple-content/graphs/contributors)
+Copyright &copy; 2018 UMCO, Our Umbraco and [other contributors](https://github.com/umco/umbraco-content-list/graphs/contributors)
 
 Licensed under the [MIT License](LICENSE.md)
