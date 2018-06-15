@@ -55,13 +55,27 @@ namespace Our.Umbraco.ContentList.PropertyEditors
 
         internal class ContentListPreValueEditor : SimpleInnerContentPreValueEditor
         {
-            // MinItems? Let's leave it until someone requests it, (as I don't currently need it)
-
-            [PreValueField("maxItems", "Max Items", "number", Description = "Set the maximum number of items allowed.")]
-            public string MaxItems { get; set; }
-
-            [PreValueField("hideLabel", "Hide Label", "boolean", Description = "Set whether to hide the editor label and have the list take up the full width of the editor window.")]
-            public string HideLabel { get; set; }
+            public ContentListPreValueEditor()
+                : base()
+            {
+                Fields.AddRange(new[]
+                {
+                    new PreValueField
+                    {
+                        Key = "maxItems",
+                        Name = "Max Items",
+                        View = "number",
+                        Description = "Set the maximum number of items allowed."
+                    },
+                    new PreValueField
+                    {
+                        Key = "hideLabel",
+                        Name = "Hide Label",
+                        View = "boolean",
+                        Description = "Set whether to hide the editor label and have the list take up the full width of the editor window."
+                    }
+                });
+            }
         }
     }
 }
