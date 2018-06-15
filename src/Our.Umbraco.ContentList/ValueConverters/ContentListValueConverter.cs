@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Our.Umbraco.ContentList.PropertyEditors;
 using Our.Umbraco.InnerContent.Converters;
-using Our.Umbraco.SimpleContent.PropertyEditors;
 using Umbraco.Core;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Core.PropertyEditors;
 
-namespace Our.Umbraco.SimpleContent.ValueConverters
+namespace Our.Umbraco.ContentList.ValueConverters
 {
-    public class SimpleContentValueConverter : InnerContentValueConverter, IPropertyValueConverterMeta
+    public class ContentListValueConverter : InnerContentValueConverter, IPropertyValueConverterMeta
     {
         public override bool IsConverter(PublishedPropertyType propertyType)
         {
-            return propertyType.PropertyEditorAlias.InvariantEquals(SimpleContentPropertyEditor.PropertyEditorAlias);
+            return propertyType.PropertyEditorAlias.InvariantEquals(ContentListPropertyEditor.PropertyEditorAlias);
         }
 
         public override object ConvertDataToSource(PublishedPropertyType propertyType, object source, bool preview)
@@ -32,7 +32,7 @@ namespace Our.Umbraco.SimpleContent.ValueConverters
             }
             catch (Exception ex)
             {
-                LogHelper.Error<SimpleContentValueConverter>("Error converting value", ex);
+                LogHelper.Error<ContentListValueConverter>("Error converting value", ex);
             }
 
             return null;

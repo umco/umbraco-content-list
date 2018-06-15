@@ -7,8 +7,8 @@
     <ProjectGuid>{E0F6B57D-F549-4EF0-B5A7-5C1A9B49FD80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Our.Umbraco.SimpleContent</RootNamespace>
-    <AssemblyName>Our.Umbraco.SimpleContent</AssemblyName>
+    <RootNamespace>Our.Umbraco.ContentList</RootNamespace>
+    <AssemblyName>Our.Umbraco.ContentList</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -57,10 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ValueConverters\SimpleContentValueConverter.cs" />
+    <Compile Include="ValueConverters\ContentListValueConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\VersionInfo.cs" />
-    <Compile Include="PropertyEditors\SimpleContentPropertyEditor.cs" />
+    <Compile Include="PropertyEditors\ContentListPropertyEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -69,8 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web\UI\App_Plugins\SimpleContent\js\simplecontent.js" />
-    <Content Include="Web\UI\App_Plugins\SimpleContent\views\simplecontent.html" />
+    <Content Include="Web\UI\App_Plugins\ContentList\contentlist.js" />
+    <Content Include="Web\UI\App_Plugins\ContentList\contentlist.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

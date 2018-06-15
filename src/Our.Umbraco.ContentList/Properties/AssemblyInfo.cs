@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Our.Umbraco.SimpleContent")]
+[assembly: AssemblyTitle("Our.Umbraco.ContentList")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("The Umbraco Community")]
-[assembly: AssemblyProduct("Our.Umbraco.SimpleContent")]
+[assembly: AssemblyProduct("Our.Umbraco.ContentList")]
 [assembly: AssemblyCopyright("Copyright \xa9 The Umbraco Community 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

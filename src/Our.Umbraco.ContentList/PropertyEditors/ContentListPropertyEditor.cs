@@ -6,17 +6,17 @@ using Umbraco.Core.Models;
 using Umbraco.Core.PropertyEditors;
 using Umbraco.Web.PropertyEditors;
 
-namespace Our.Umbraco.SimpleContent.PropertyEditors
+namespace Our.Umbraco.ContentList.PropertyEditors
 {
     [PropertyEditor(PropertyEditorAlias, PropertyEditorName, PropertyEditorViewPath, Group = "rich content", Icon = "icon-page-add", ValueType = "JSON")]
-    [PropertyEditorAsset(ClientDependencyType.Javascript, "~/App_Plugins/SimpleContent/js/simplecontent.js")]
-    public class SimpleContentPropertyEditor : SimpleInnerContentPropertyEditor
+    [PropertyEditorAsset(ClientDependencyType.Javascript, "~/App_Plugins/ContentList/js/contentlist.js")]
+    public class ContentListPropertyEditor : SimpleInnerContentPropertyEditor
     {
-        public const string PropertyEditorAlias = "Our.Umbraco.SimpleContent";
-        public const string PropertyEditorName = "Simple Content";
-        public const string PropertyEditorViewPath = "/App_Plugins/SimpleContent/views/simplecontent.html";
+        public const string PropertyEditorAlias = "Our.Umbraco.ContentList";
+        public const string PropertyEditorName = "Content List";
+        public const string PropertyEditorViewPath = "/App_Plugins/ContentList/views/contentlist.html";
 
-        public SimpleContentPropertyEditor()
+        public ContentListPropertyEditor()
             : base()
         {
             DefaultPreValues.Add("maxItems", 0);
@@ -24,12 +24,12 @@ namespace Our.Umbraco.SimpleContent.PropertyEditors
 
         protected override PropertyValueEditor CreateValueEditor()
         {
-            return new SimpleContentValueEditor(base.CreateValueEditor());
+            return new ContentListValueEditor(base.CreateValueEditor());
         }
 
-        internal class SimpleContentValueEditor : SimpleInnerContentPropertyValueEditor
+        internal class ContentListValueEditor : SimpleInnerContentPropertyValueEditor
         {
-            public SimpleContentValueEditor(PropertyValueEditor wrapped) : base(wrapped)
+            public ContentListValueEditor(PropertyValueEditor wrapped) : base(wrapped)
             { }
 
             public override void ConfigureForDisplay(PreValueCollection preValues)
@@ -50,10 +50,10 @@ namespace Our.Umbraco.SimpleContent.PropertyEditors
 
         protected override PreValueEditor CreatePreValueEditor()
         {
-            return new SimpleContentPreValueEditor();
+            return new ContentListPreValueEditor();
         }
 
-        internal class SimpleContentPreValueEditor : SimpleInnerContentPreValueEditor
+        internal class ContentListPreValueEditor : SimpleInnerContentPreValueEditor
         {
             // MinItems? Let's leave it until someone requests it, (as I don't currently need it)
 
