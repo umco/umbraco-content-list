@@ -13,12 +13,13 @@
         vm.allowEdit = true;
         vm.allowRemove = true;
         vm.published = true;
-        vm.sortable = true;
+        vm.sortable = $scope.model.config.maxItems !== "1";
 
         vm.sortableOptions = {
             axis: "y",
             containment: "parent",
             cursor: "move",
+            disabled: !vm.sortable,
             opacity: 0.7,
             scroll: true,
             tolerance: "pointer",
