@@ -9,12 +9,12 @@ using Umbraco.Web.PropertyEditors;
 namespace Our.Umbraco.ContentList.PropertyEditors
 {
     [PropertyEditor(PropertyEditorAlias, PropertyEditorName, PropertyEditorViewPath, Group = "rich content", Icon = "icon-page-add", ValueType = "JSON")]
-    [PropertyEditorAsset(ClientDependencyType.Javascript, "~/App_Plugins/ContentList/js/contentlist.js")]
+    [PropertyEditorAsset(ClientDependencyType.Javascript, "~/App_Plugins/ContentList/contentlist.js")]
     public class ContentListPropertyEditor : SimpleInnerContentPropertyEditor
     {
         public const string PropertyEditorAlias = "Our.Umbraco.ContentList";
         public const string PropertyEditorName = "Content List";
-        public const string PropertyEditorViewPath = "/App_Plugins/ContentList/views/contentlist.html";
+        public const string PropertyEditorViewPath = "/App_Plugins/ContentList/contentlist.html";
 
         public ContentListPropertyEditor()
             : base()
