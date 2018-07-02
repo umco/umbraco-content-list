@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Our.Umbraco.ContentList.PropertyEditors;
-using Our.Umbraco.InnerContent.Converters;
+using Our.Umbraco.InnerContent.ValueConverters;
 using Umbraco.Core;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Models;

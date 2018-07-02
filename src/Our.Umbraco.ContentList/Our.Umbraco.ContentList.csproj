@@ -42,9 +42,8 @@
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Our.Umbraco.InnerContent, Version=1.1.6675.6337, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Our.Umbraco.InnerContent.Core.1.1.1\lib\net45\Our.Umbraco.InnerContent.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Our.Umbraco.InnerContent, Version=2.0.6757.11827, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Our.Umbraco.InnerContent.Core.2.0.0-alpha-000131\lib\net45\Our.Umbraco.InnerContent.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="umbraco, Version=1.0.6470.38242, Culture=neutral, processorArchitecture=MSIL">
@@ -73,15 +72,6 @@
     <Content Include="Web\UI\App_Plugins\ContentList\contentlist.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>IF %25ComputerName%25 == UMBRELLA-SB (
-  IF NOT "$(SolutionDir)" == "*Undefined*" (
-    XCOPY /s /y "$(TargetPath)" "C:\VCS\Umbrella\Carlsberg\lpb-project\carlsberg-lpb-baseline\bin\"
-    XCOPY /s /y "$(TargetDir)$(ProjectName).pdb" "C:\VCS\Umbrella\Carlsberg\lpb-project\carlsberg-lpb-baseline\bin\"
-    XCOPY /s /y "$(ProjectDir)Web\UI\*.*" "C:\VCS\Umbrella\Carlsberg\lpb-project\carlsberg-lpb-baseline\"
-  )
-)</PostBuildEvent>
-  </PropertyGroup>
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
