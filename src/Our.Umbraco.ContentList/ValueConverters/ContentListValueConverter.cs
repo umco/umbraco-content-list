@@ -22,7 +22,7 @@ namespace Our.Umbraco.ContentList.ValueConverters
         public override object ConvertDataToSource(PublishedPropertyType propertyType, object source, bool preview)
         {
             var value = source?.ToString();
-            if (value == null || string.IsNullOrWhiteSpace(value))
+            if (string.IsNullOrWhiteSpace(value))
                 return null;
 
             try
