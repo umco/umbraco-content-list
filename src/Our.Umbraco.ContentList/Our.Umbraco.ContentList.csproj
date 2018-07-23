@@ -44,6 +44,7 @@
     </Reference>
     <Reference Include="Our.Umbraco.InnerContent, Version=2.0.6775.8222, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Our.Umbraco.InnerContent.Core.2.0.0\lib\net45\Our.Umbraco.InnerContent.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="umbraco, Version=1.0.6470.38242, Culture=neutral, processorArchitecture=MSIL">
