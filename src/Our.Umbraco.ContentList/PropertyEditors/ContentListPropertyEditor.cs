@@ -35,27 +35,8 @@ namespace Our.Umbraco.ContentList.PropertyEditors
             public ContentListPreValueEditor()
                 : base()
             {
-                // TODO: Once InnerContent exposes these extension methods, (in v2.0.1), uncomment the following lines. [LK:2018-07-20]
-                ////Fields.Add("maxItems", "Max Items", "number", "Set the maximum number of items allowed.");
-                ////Fields.AddHideLabel();
-
-                Fields.AddRange(new[]
-                {
-                    new PreValueField
-                    {
-                        Key = "maxItems",
-                        Name = "Max Items",
-                        View = "number",
-                        Description = "Set the maximum number of items allowed."
-                    },
-                    new PreValueField
-                    {
-                        Key = "hideLabel",
-                        Name = "Hide Label",
-                        View = "boolean",
-                        Description = "Set whether to hide the editor label and have the list take up the full width of the editor window."
-                    }
-                });
+                Fields.Add("maxItems", "Max Items", "number", "Set the maximum number of items allowed.");
+                Fields.AddHideLabel();
             }
         }
     }
