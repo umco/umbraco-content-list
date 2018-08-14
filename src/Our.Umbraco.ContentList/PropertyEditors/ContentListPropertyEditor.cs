@@ -21,11 +21,6 @@ namespace Our.Umbraco.ContentList.PropertyEditors
             DefaultPreValues.Add("hideLabel", "0");
         }
 
-        protected override PropertyValueEditor CreateValueEditor()
-        {
-            return new SimpleInnerContentPropertyValueEditor(base.CreateValueEditor());
-        }
-
         protected override PreValueEditor CreatePreValueEditor()
         {
             return new ContentListPreValueEditor();
