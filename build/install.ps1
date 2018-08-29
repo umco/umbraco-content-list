@@ -13,7 +13,7 @@ if (!$contentFolder)
 	$projectPathExists = Test-Path $projectPath
 
 	if ($projectPathExists) {
-		Write-Host "Updating Simple Content App_Plugin files using PS as they have been excluded from the project"
+		Write-Host "Updating Content List App_Plugin files using PS as they have been excluded from the project"
 		Copy-Item $newPackageFiles $projectPath -Recurse -Force
 	}
 }

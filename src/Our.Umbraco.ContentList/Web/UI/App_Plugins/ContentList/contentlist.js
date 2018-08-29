@@ -63,20 +63,20 @@
         vm.edit = edit;
         vm.remove = remove;
 
-        function add(evt) {
-            vm.overlayConfig.event = evt;
+        function add($event) {
+            vm.overlayConfig.event = $event;
             vm.overlayConfig.data = { model: null, idx: $scope.model.value.length, action: "add" };
             vm.overlayConfig.show = true;
         };
 
-        function edit(evt, idx, itm) {
-            vm.overlayConfig.event = evt;
-            vm.overlayConfig.data = { model: itm, idx: idx, action: "edit" };
+        function edit($event, $index, item) {
+            vm.overlayConfig.event = $event;
+            vm.overlayConfig.data = { model: item, idx: $index, action: "edit" };
             vm.overlayConfig.show = true;
         };
 
-        function remove(evt, idx) {
-            $scope.model.value.splice(idx, 1);
+        function remove($index) {
+            $scope.model.value.splice($index, 1);
 
             if ($scope.model.config.maxItems === "0" || $scope.model.value.length < $scope.model.config.maxItems) {
                 vm.allowAdd = true;
