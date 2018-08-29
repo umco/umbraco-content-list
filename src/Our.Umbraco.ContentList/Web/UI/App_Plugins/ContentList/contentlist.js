@@ -75,8 +75,8 @@
             vm.overlayConfig.show = true;
         };
 
-        function remove(evt, idx) {
-            $scope.model.value.splice(idx, 1);
+        function remove($index) {
+            $scope.model.value.splice($index, 1);
 
             if ($scope.model.config.maxItems === "0" || $scope.model.value.length < $scope.model.config.maxItems) {
                 vm.allowAdd = true;
