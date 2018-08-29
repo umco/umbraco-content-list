@@ -5,7 +5,7 @@ using Umbraco.Web.PropertyEditors;
 
 namespace Our.Umbraco.ContentList.PropertyEditors
 {
-    [PropertyEditor(PropertyEditorAlias, PropertyEditorName, PropertyEditorValueTypes.Json, PropertyEditorViewPath, Group = "rich content", Icon = "icon-page-add")]
+    [PropertyEditor(PropertyEditorAlias, PropertyEditorName, PropertyEditorValueTypes.Json, PropertyEditorViewPath, Group = "lists", Icon = "icon-page-add")]
     [PropertyEditorAsset(ClientDependencyType.Javascript, PropertyEditorJsPath)]
     public class ContentListPropertyEditor : SimpleInnerContentPropertyEditor
     {
